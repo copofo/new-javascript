@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aula 01</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <h1>Aula 02</h1>
+
+
+    <h2>Entendendo o Modo Estrito no JavaScript: Escrevendo Código Mais Limpo e Elegante</h2>
+
+    <p>
+      Olá, pessoal! Hoje vamos explorar um conceito importante no mundo do JavaScript - o "modo estrito". Se você está acompanhando o nosso novo curso de JavaScript, este é um tópico fundamental para escrever código mais limpo e eficiente. Vamos dar uma olhada no que é o modo estrito, por que ele é útil e como usá-lo com exemplos práticos.
+    </p>
+
+    <h3>O que é o Modo Estrito?</h3>
+    <p>
+
+      O modo estrito (strict mode) é uma funcionalidade incorporada ao JavaScript que ajuda a evitar erros comuns e promove boas práticas de programação. Quando ativado, ele impõe um conjunto de restrições adicionais ao seu código, tornando-o mais rigoroso e seguro. O principal objetivo do modo estrito é eliminar comportamentos indefinidos e não recomendados no JavaScript, levando a um código mais confiável.
+
+    </p>
+
+    <h3>
+      Vantagens do Modo Estrito:
+    </h3>
+
+
+    <ol>
+      <li>
+        <strong>Declaração Obrigatória de Variáveis: </strong> No modo estrito, você é obrigado a declarar variáveis antes de utilizá-las. Isso evita o uso acidental de variáveis não declaradas, o que pode levar a erros difíceis de depurar.
+      </li>
+
+      <li>
+        <strong>Prevenção de Comportamentos Não Desejados:</strong> O modo estrito desabilita algumas construções que podem ser confusas ou propensas a erros, como a atribuição a variáveis não escritas corretamente.
+      </li>
+
+      <li>
+        <strong>Melhoria na Qualidade do Código: </strong> Ao forçar o programador a seguir práticas mais rigorosas, o modo estrito promove a criação de um código mais limpo, legível e de fácil manutenção.
+      </li>
+
+    </ol>
+
+    <p>Aqui está um exemplo de código que demonstra o uso do modo estrito:</p>
+
+    <p class="ex">
+      Exemplos de Uso:
+    </p>
+    <pre>
+      
+      <code>
+          <span>// Sem o Modo Estrito (sem erro)</span>
+          nome = "Alice";
+          console.log(nome);  <span>// Saída: "Alice"</span>
+          
+          <span>// Com o Modo Estrito (erro: variável não declarada)</span>
+          "use strict";
+          nome = "Alice";     <span>// Erro: "nome" não está definido</span>
+          console.log(nome);
+      </code>
+      
+    </pre>
+
+  
+
+    <pre>
+  
+      <code>
+          <span>// Sem o Modo Estrito (sem erro)</span>
+          function calcular(idade) {
+              idade = idade + 10;
+              return idade;
+          }
+
+          <span>// Com o Modo Estrito (erro: argumento somente leitura)</span>
+          "use strict";
+          function calcular(idade) {
+              idade = idade + 10;  <sapn>// Erro: "idade" é somente leitura</sapn>
+              return idade;
+          }
+      </code>
+      
+    </pre>
+
+
+  
+      <h3>Ativando o Modo Estrito:</h3>
+    
+
+    <p>
+      Para ativar o modo estrito em seu código JavaScript, basta adicionar a linha "use strict"; no topo do seu arquivo ou função. Veja como fica:
+    </p>
+
+    <pre>
+      <code>
+
+        "use strict";
+
+      </code>
+    </pre>
+
+    <h3>Conclusão:</h3>
+
+    <p>O modo estrito no JavaScript é uma ferramenta valiosa para desenvolvedores que desejam escrever código mais limpo, seguro e robusto. Ao adotar o modo estrito, você estará evitando erros comuns e seguindo práticas recomendadas de programação. Lembre-se de ativá-lo sempre que estiver desenvolvendo para garantir que o seu código seja da mais alta qualidade possível.</p>
+
+    <p>Esperamos que este post tenha ajudado a esclarecer o conceito do modo estrito no JavaScript. Se tiver alguma dúvida ou quiser explorar mais sobre esse tópico, sinta-se à vontade para deixar um comentário. Até a próxima aula!</p>
+
+    <p><strong>Nota:</strong> Este exemplo de código e explicação foi baseado no conteúdo fornecido no curso <a href="https://youtu.be/E4DBTqgxHGM">Javascript Completo e Profissional</a>, com Prof. Bruno, do canal <a href="https://www.youtube.com/@cfbcursos">CFBCursos</a>.</p>
+
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

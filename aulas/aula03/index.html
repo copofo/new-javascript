@@ -4,82 +4,8 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>aula 01</title>
-  <style type="text/css" media="all">
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      line-height: 30px;
-    }
-
-    body {
-      display: flex;
-    }
-
-    pre {
-      background-color: black;
-      opacity: 0.99;
-
-      font-size: 18px;
-      width: 70%;
-      position: relative;
-      margin: 20px auto;
-      border-radius: 8px;
-      box-shadow: 5px 5px 2px black;
-
-    }
-
-    .ex {
-      color: green;
-    }
-
-    code {
-      color: #009200;
-    }
-
-    p {
-      text-indent: 16px;
-      text-align: justify;
-      margin: 20px;
-     
-    }
-
-    h1,
-    h2, h3 {
-      text-align: center;
-      margin: 20px;
-    }
-
-    ol{
-      padding: 40px;
-    }
-
-    li {
-      line-height: 30px;
-      padding: 10px;
-   
-    }
-
-    .container {
-      border: 1px solid black;
-      width: 80%;
-      height: auto;
-      position: absolute;
-      right: 0;
-      left: 0;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    span{
-      color: gray;
-    }
-    .valor{
-
-    }
-  </style>
+  <title>aula 03</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -90,91 +16,81 @@
     <h1>Aula 03</h1>
 
 
-    <h2>Aproveitando o Poder do JavaScript no Navegador: Rodando Código com Praticidade</h2>
+    <h2>Explorando Tipos de Declarações e Constantes em JavaScript: Controlando Variáveis com Precisão</h2>
 
     <p>
-      Olá, pessoal! No nosso curso de JavaScript, vamos abordar uma dica valiosa para quem está enfrentando dificuldades na instalação e configuração do Node.js. Se você quer uma maneira mais direta e prática de executar scripts JavaScript, este post é para você. Vamos explorar como rodar código JavaScript diretamente no navegador e também apresentar a ferramenta "Replit" para facilitar ainda mais esse processo.
+      Olá, pessoal! No nosso curso de JavaScript, estamos de volta para abordar um tópico crucial: as declarações de variáveis e o uso de constantes. Vamos mergulhar fundo nesse assunto e entender os diferentes tipos de declarações, bem como a importância das constantes em nosso código.
     </p>
 
-    <h3>Executando Código JavaScript no Navegador:</h3>
+    <h3>Tipos de Declarações de Variáveis:</h3>
     <p>
 
-      Às vezes, instalar e configurar o Node.js pode ser um obstáculo para iniciantes. Mas você não precisa se preocupar, pois é possível rodar seu código JavaScript diretamente no navegador. Aqui está como fazer:
+      Em JavaScript, existem diferentes formas de declarar variáveis. Vamos examinar duas delas: <strong>var</strong> e <strong>let</strong>.
 
     </p>
 
+   
 
     <ol>
       <li>
-        Crie um arquivo HTML e adicione o código JavaScript entre as tags <strong>&lt;script&gt; &lt;/script&gt;</strong>.
+        Declaração com var: A declaração com var era comum no passado, mas possui algumas limitações. Uma característica marcante é que as variáveis declaradas com var têm um comportamento conhecido como "hoisting", que as eleva até o topo do escopo. Isso significa que mesmo que uma variável seja declarada dentro de um bloco condicional (como um if), ela será acessível em todo o escopo da função ou do bloco.
       </li>
 
       <li>
-        Abra o arquivo HTML no navegador.
+        Declaração com let: Com a introdução do let, essa limitação do hoisting foi corrigida. Variáveis declaradas com let têm escopo de bloco, o que significa que elas só podem ser acessadas dentro do bloco onde foram declaradas ou em blocos aninhados a ele. Isso proporciona maior controle e evita problemas de escopo indesejado.
       </li>
 
-      <li>
-        Abra o console de desenvolvimento (botão direito -> Inspecionar -> Console).
-      </li>
+
 
     </ol>
 
-    <h3>Utilizando a Ferramenta "Replit" como Alternativa:</h3>
+    <h3>Constantes:</h3>
 
-    <p>
-      Uma outra opção para executar código JavaScript sem a necessidade de configurações complexas é usar a plataforma online chamada "Replit". Aqui está como aproveitar essa ferramenta:
-    </p>
-
-
-    <ol>
-      <li>Acesse o site do Replit e faça um cadastro, se ainda não tiver uma conta.</li>
-      <li>Crie um "Replit" para o seu projeto.</li>
-      <li>Selecione a linguagem "Node.js" para começar.</li>
-      <li>Insira o código JavaScript na área de edição.</li>
-      <li>Clique no botão "Run" para executar o código.</li>
-    </ol>
+    <p>Constantes são declarações de variáveis que não podem ser alteradas após serem inicializadas. Elas são declaradas usando a palavra-chave const. Isso é útil quando queremos garantir que um valor não seja modificado acidentalmente durante a execução do programa.</p>
 
     <p class="ex">
       Exemplo de Uso:
     </p>
-
     <pre>
       
       <code>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-            &lt;title&gt;Executando JavaScript no Navegador&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;script&gt;
-                <span>// Exemplo de código JavaScript</span>
-                let nome = "Alice";
-                console.log("Olá, " + nome + "!");
-            &lt;/script&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+        <span>// Declaração com var (evite usar)</span>
+        var idade = 25;
+        if (true) {
+            var idade = 30;
+        }
+        console.log(idade);  <span>// Saída: 30 (mesmo fora do bloco)</span>
         
+        <span>// Declaração com let (recomendado)</span>
+        let preco = 100;
+        if (true) {
+            let preco = 150;
+        }
+        console.log(preco); <span> // Saída: 100 (não afetado pelo bloco)</span>
+        
+        <span>// Constantes</span>
+        const curso = "JavaScript";
+        <span>// curso = "HTML";  // Isso causaria um erro, não é permitido alterar o valor</span>
+        console.log(curso);  <span>// Saída: "JavaScript"</span>
+
       </code>
       
     </pre>
 
   
 
-   
+    
 
-
-  
     <h3>Conclusão:</h3>
 
-    <p>Se você está encontrando dificuldades com a instalação e configuração do Node.js, não se preocupe. Você pode começar a executar código JavaScript diretamente no seu navegador ou utilizar ferramentas online como o Replit. Isso permite que você se concentre no aprendizado da linguagem sem ser sobrecarregado com configurações complicadas. À medida que avançarmos no curso, você poderá explorar manipulações mais avançadas no navegador e no ambiente Node.js. Fique ligado para mais dicas e aulas interessantes!</p>
+    <p>Entender os diferentes tipos de declarações de variáveis e o uso de constantes é essencial para escrever um código JavaScript confiável e seguro. O uso de let em vez de var ajuda a evitar problemas de escopo e a manter o código mais previsível. Já as constantes garantem que valores importantes não sejam inadvertidamente alterados.</p>
 
-    <p>Esperamos que este post tenha ajudado a simplificar o processo de rodar código JavaScript. Se você tiver dúvidas ou quiser compartilhar sua experiência, sinta-se à vontade para deixar um comentário. Até a próxima aula!</p>
+    <p>Esperamos que este post tenha esclarecido a importância das declarações de variáveis e do uso de constantes no JavaScript. Se você tiver dúvidas ou quiser compartilhar sua experiência, não hesite em deixar um comentário. Até a próxima aula!</p>
 
     <p><strong>Nota:</strong> Este exemplo de código e explicação foi baseado no conteúdo fornecido no curso <a href="https://youtu.be/E4DBTqgxHGM">Javascript Completo e Profissional</a>, com Prof. Bruno, do canal <a href="https://www.youtube.com/@cfbcursos">CFBCursos</a>.</p>
 
   </div>
 </body>
-<script src="aula01.js"></script>
+<script src="script.js"></script>
 
 </html>
