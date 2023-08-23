@@ -1,0 +1,34 @@
+/* Estilo para a caixa do código */
+.code-box {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o código */
+.code-highlight {
+  color: #333;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+/* Estilo para o botão de cópia */
+#copyButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#copyButton:hover {
+  background-color: #45a049;
+}
