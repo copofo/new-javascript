@@ -1,17 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Código com Estilo</title>
+  <title>Explorando Operadores Aritméticos em JavaScript</title>
+  <style type="text/css" media="all">
+  *{
+    user-select: none;
+  }
+    pre{
+      background-color: black;
+      color: green;
+      padding: 50px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-  <div class="code-box">
-    <pre><code id="codeSnippet" class="code-highlight">console.log("Alô, mundo!");</code></pre>
-    <button id="copyButton">Copiar</button>
-  </div>
+  <h1>🌟🚀 Saudações, pessoal! Aqui é o Professor Bruno!</h1>
+  <p>E estou de volta com mais um mergulho empolgante no mundo do JavaScript.</p>
+  <p>Vocês estão prontos para decolar nessa jornada? Deixem um comentário para compartilhar como estão curtindo o curso até agora!</p>
+  
+  <h2>Operadores Aritméticos: Explorando o Poder Matemágico</h2>
+  <p>Você está preparado para explorar os operadores que formam a base da aritmética em JavaScript? 🧮 Aqui estão eles, junto com exemplos práticos:</p>
+  <ul>
+    <li><strong>Adição (+):</strong> Somando dois valores.</li>
+    <li><strong>Subtração (-):</strong> Subtraindo valores.</li>
+    <li><strong>Multiplicação (*):</strong> Multiplicando valores.</li>
+    <li><strong>Divisão (/):</strong> Dividindo valores.</li>
+    <li><strong>Resto (%):</strong> Obtendo o resto de uma divisão.</li>
+  </ul>
+  
+  <pre><code>
+let num1 = 10;
+let num2 = 5;
+let resultado = 0;
 
-  <script src="script.js"></script>
+resultado = num1 + num2; // 15
+resultado = num2 - num1; // -5
+resultado = num1 * num2; // 50
+resultado = num2 / num1; // 0.5
+resultado = num1 % num2; // 0
+  </code></pre>
+  
+  <h2>Incremento e Decremento: Ação na Velocidade Máxima!</h2>
+  <p>Agora, preparem-se para a ação com os operadores de incremento e decremento! 💥</p>
+  <ul>
+    <li><strong>Incremento (++):</strong> Adiciona 1 ao valor.</li>
+    <li><strong>Decremento (--):</strong> Subtrai 1 do valor.</li>
+  </ul>
+  
+  <pre><code>
+let valor = 10;
+
+valor++; // 11
+valor--; // 10
+valor += 5; // 15
+valor /= 2; // 7.5
+  </code></pre>
+  
+  <h2>Tabela de Operadores JavaScript: Um Guia Essencial</h2>
+  <p>E para vocês sempre terem à mão, aqui está a tabela completa dos operadores:</p>
+  
+  <table border="1">
+  <tr>
+    <th>Operador</th>
+    <th>Descrição</th>
+    <th>Exemplo</th>
+  </tr>
+  <tr>
+    <td>(...)</td>
+    <td>Parênteses</td>
+    <td>(5 + 3) * 2 → 16</td>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>Adição</td>
+    <td>num1 + num2 → 15</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>Subtração</td>
+    <td>num2 - num1 → -5</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>Multiplicação</td>
+    <td>num1 * num2 → 50</td>
+  </tr>
+  <tr>
+    <td>/</td>
+    <td>Divisão</td>
+    <td>num2 / num1 → 0.5</td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>Resto da divisão (Módulo)</td>
+    <td>num1 % num2 → 0</td>
+  </tr>
+  <tr>
+    <td>**</td>
+    <td>Exponenciação</td>
+    <td>base ** expoente → 25</td>
+  </tr>
+  <tr>
+    <td>++</td>
+    <td>Incremento (adiciona 1)</td>
+    <td>valor++ → 11</td>
+  </tr>
+  <tr>
+    <td>--</td>
+    <td>Decremento (subtrai 1)</td>
+    <td>valor-- → 10</td>
+  </tr>
+  <tr>
+    <td>+=</td>
+    <td>Atribuição de adição</td>
+    <td>x += 5; // x = x + 5;</td>
+  </tr>
+  <tr>
+    <td>-=</td>
+    <td>Atribuição de subtração</td>
+    <td>x -= 3; // x = x - 3;</td>
+  </tr>
+  <tr>
+    <td>*=</td>
+    <td>Atribuição de multiplicação</td>
+    <td>x *= 2; // x = x * 2;</td>
+  </tr>
+  <tr>
+    <td>/=</td>
+    <td>Atribuição de divisão</td>
+    <td>x /= 4; // x = x / 4;</td>
+  </tr>
+  <tr>
+    <td>%=</td>
+    <td>Atribuição de resto (módulo)</td>
+    <td>x %= 3; // x = x % 3;</td>
+  </tr>
+  <tr>
+    <td>&amp;</td>
+    <td>AND Bit a Bit</td>
+    <td>(1010 &amp; 1100) → 1000</td>
+  </tr>
+  <tr>
+    <td>|</td>
+    <td>OR Bit a Bit</td>
+    <td>(1010 | 1100) → 1110</td>
+  </tr>
+  <tr>
+    <td>^</td>
+    <td>XOR Bit a Bit</td>
+    <td>(1010 ^ 1100) → 0110</td>
+  </tr>
+  <tr>
+    <td>~</td>
+    <td>NOT Bit a Bit</td>
+    <td>~1010 → 0101</td>
+  </tr>
+  <tr>
+    <td>&lt;&lt;</td>
+    <td>Deslocamento à Esquerda</td>
+    <td>(0001 &lt;&lt; 2) → 0100</td>
+  </tr>
+  <tr>
+    <td>&gt;&gt;</td>
+    <td>Deslocamento à Direita com Sinal</td>
+    <td>(0100 &gt;&gt; 1) → 0010</td>
+  </tr>
+  <tr>
+    <td>&gt;&gt;&gt;</td>
+    <td>Deslocamento à Direita sem Sinal</td>
+    <td>(0100 &gt;&gt;&gt; 1) → 0010</td>
+  </tr>
+  <tr>
+    <td>&amp;&amp;</td>
+    <td>AND Lógico</td>
+    <td>true &amp;&amp; false → false</td>
+  </tr>
+  <tr>
+    <td>||</td>
+    <td>OR Lógico</td>
+    <td>true || false → true</td>
+  </tr>
+  <tr>
+    <td>!</td>
+    <td>NOT Lógico</td>
+    <td>!true → false</td>
+  </tr>
+  <tr>
+    <td>==</td>
+    <td>Igualdade (valor)</td>
+    <td>5 == "5" → true</td>
+  </tr>
+  <tr>
+    <td>===</td>
+    <td>Igualdade Estrita (valor e tipo)</td>
+    <td>5 === "5" → false</td>
+  </tr>
+  <tr>
+    <td>!=</td>
+    <td>Diferente (valor)</td>
+    <td>5 != "5" → false</td>
+  </tr>
+  <tr>
+    <td>!==</td>
+    <td>Diferente Estrito (valor e tipo)</td>
+    <td>5 !== "5" → true</td>
+  </tr>
+  <tr>
+    <td>&lt;</td>
+    <td>Menor que</td>
+    <td>5 &lt; 10 → true</td>
+  </tr>
+  <tr>
+    <td>&gt;</td>
+    <td>Maior que</td>
+    <td>10 &gt; 5 → true</td>
+  </tr>
+  <tr>
+    <td>&lt;=</td>
+    <td>Menor ou Igual</td>
+    <td>5 &lt;= 5 → true</td>
+  </tr>
+  <tr>
+    <td>&gt;=</td>
+    <td>Maior ou Igual</td>
+    <td>10 &gt;= 5 → true</td>
+  </tr>
+  <tr>
+    <td>?:</td>
+    <td>Operador Ternário</td>
+    <td>idade &lt; 18 ? "Menor de idade" : "Maior de idade"</td>
+  </tr>
+  <tr>
+    <td>=</td>
+    <td>Atribuição</td>
+    <td>let x = 10;</td>
+  </tr>
+</table>
+
+  
+  <h2>Mãos à Obra!</h2>
+  <p>Agora é a sua vez de praticar esses operadores e criar suas próprias mágicas em JavaScript.</p>
+  <p>Deixe um comentário compartilhando suas descobertas e como isso está impactando sua jornada de aprendizado!</p>
+  
+  <p>Fiquem ligados para a próxima aula, onde exploraremos operadores relacionais e lógicos, dando um upgrade ainda maior às nossas habilidades. 👊 Até lá, pessoal!</p>
+  <p>Continuem aprendendo e codando com paixão! 🚀🔥</p>
+  
+  <p><strong>Nota:</strong> Este exemplo de código e explicação foi baseado no conteúdo fornecido no curso <a href="https://youtu.be/E4DBTqgxHGM">Javascript Completo e Profissional</a>, com Prof. Bruno, do canal <a href="https://www.youtube.com/@cfbcursos">CFBCursos</a>.</p>
 </body>
 </html>

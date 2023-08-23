@@ -6,79 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>aula 01</title>
   <style type="text/css" media="all">
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      line-height: 30px;
-    }
+  body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
 
-    body {
-      display: flex;
-    }
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    pre {
-      background-color: black;
-      opacity: 0.99;
+h1, h2, h3 {
+  text-align: center;
+}
 
-      font-size: 18px;
-      width: 70%;
-      position: relative;
-      margin: 20px auto;
-      border-radius: 8px;
-      box-shadow: 5px 5px 2px black;
+pre {
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  padding: 10px;
+  overflow: auto;
+  white-space: pre-wrap; /* Added property for wrapping text */
+  font-size: 60%;
+}
 
-    }
+.ex {
+  color: green;
+}
 
-    .ex {
-      color: green;
-    }
+code {
+  color: yellow;
+}
 
-    code {
-      color: #009200;
-    }
+p {
+  text-indent: 16px;
+  text-align: justify;
+}
 
-    p {
-      text-indent: 16px;
-      text-align: justify;
-      margin: 20px;
-     
-    }
+/* Media Query for screens smaller than 600px */
+@media (max-width: 600px) {
+  p {
+    text-indent: 0;
+  }
+}
 
-    h1,
-    h2, h3 {
-      text-align: center;
-      margin: 20px;
-    }
-
-    ol{
-      padding: 40px;
-    }
-
-    li {
-      line-height: 30px;
-      padding: 10px;
-   
-    }
-
-    .container {
-      border: 1px solid black;
-      width: 80%;
-      height: auto;
-      position: absolute;
-      right: 0;
-      left: 0;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    span{
-      color: gray;
-    }
-    .valor{
-
-    }
   </style>
 </head>
 
@@ -130,16 +105,16 @@
     </p>
     <pre>
       
-      <code>
-          <span>// Sem o Modo Estrito (sem erro)</span>
-          nome = "Alice";
-          console.log(nome);  <span>// Saída: "Alice"</span>
-          
-          <span>// Com o Modo Estrito (erro: variável não declarada)</span>
-          "use strict";
-          nome = "Alice";     <span>// Erro: "nome" não está definido</span>
-          console.log(nome);
-      </code>
+<code>
+<span>// Sem o Modo Estrito (sem erro)</span>
+nome = "Alice";
+console.log(nome);  <span>// Saída: "Alice"</span>
+
+<span>// Com o Modo Estrito (erro: variável não declarada)</span>
+"use strict";
+nome = "Alice";     <span>// Erro: "nome" não está definido</span>
+console.log(nome);
+</code>
       
     </pre>
 
@@ -147,20 +122,20 @@
 
     <pre>
   
-      <code>
-          <span>// Sem o Modo Estrito (sem erro)</span>
-          function calcular(idade) {
-              idade = idade + 10;
-              return idade;
-          }
+<code>
+<span>// Sem o Modo Estrito (sem erro)</span>
+function calcular(idade) {
+idade = idade + 10;
+return idade;
+}
 
-          <span>// Com o Modo Estrito (erro: argumento somente leitura)</span>
-          "use strict";
-          function calcular(idade) {
-              idade = idade + 10;  <sapn>// Erro: "idade" é somente leitura</sapn>
-              return idade;
-          }
-      </code>
+<span>// Com o Modo Estrito (erro: argumento somente leitura)</span>
+"use strict";
+function calcular(idade) {
+idade = idade + 10;  <sapn>// Erro: "idade" é somente leitura</sapn>
+return idade;
+}
+</code>
       
     </pre>
 

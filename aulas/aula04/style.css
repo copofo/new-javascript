@@ -1,34 +1,73 @@
-/* Estilo para a caixa do código */
-.code-box {
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  padding: 16px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
-/* Estilo para o código */
-.code-highlight {
-  color: #333;
-  font-family: "Courier New", monospace;
-  font-size: 14px;
-  white-space: pre-wrap;
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
-/* Estilo para o botão de cópia */
-#copyButton {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-#copyButton:hover {
-  background-color: #45a049;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #f5f5f5;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 3px;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 600px) {
+    .content {
+        padding: 10px;
+    }
 }

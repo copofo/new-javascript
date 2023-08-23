@@ -53,27 +53,27 @@
     </p>
     <pre>
       
-      <code>
-        <span>// Declaração com var (evite usar)</span>
-        var idade = 25;
-        if (true) {
-            var idade = 30;
-        }
-        console.log(idade);  <span>// Saída: 30 (mesmo fora do bloco)</span>
-        
-        <span>// Declaração com let (recomendado)</span>
-        let preco = 100;
-        if (true) {
-            let preco = 150;
-        }
-        console.log(preco); <span> // Saída: 100 (não afetado pelo bloco)</span>
-        
-        <span>// Constantes</span>
-        const curso = "JavaScript";
-        <span>// curso = "HTML";  // Isso causaria um erro, não é permitido alterar o valor</span>
-        console.log(curso);  <span>// Saída: "JavaScript"</span>
+<code>
+<span>// Declaração com var (evite usar)</span>
+var idade = 25;
+if (true) {
+var idade = 30;
+}
+console.log(idade);  <span>// Saída: 30 (mesmo fora do bloco)</span>
 
-      </code>
+<span>// Declaração com let (recomendado)</span>
+let preco = 100;
+if (true) {
+let preco = 150;
+}
+console.log(preco); <span> // Saída: 100 (não afetado pelo bloco)</span>
+
+<span>// Constantes</span>
+const curso = "JavaScript";
+<span>// curso = "HTML";  // Isso causaria um erro, não é permitido alterar o valor</span>
+console.log(curso);  <span>// Saída: "JavaScript"</span>
+
+</code>
       
     </pre>
 
