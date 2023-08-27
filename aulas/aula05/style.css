@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 30px;
+  }
+
+  body {
+    display: flex;
+  }
+
+  pre {
+    background-color: black;
+    opacity: 0.99;
+
+    font-size: 18px;
+    width: auto;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 5px 5px 2px black;
+
+  }
+
+  .ex {
+    color: green;
+  }
+
+  code {
+    color: #009200;
+  }
+
+  p {
+    text-indent: 16px;
+    text-align: justify;
+    margin: 20px;
+    font-size: 19px;
+   
+  }
+
+  h1,
+  h2, h3 {
+    text-align: center;
+    margin: 20px;
+  }
+
+  ol{
+    padding: 40px;
+  }
+
+  li {
+    line-height: 30px;
+    padding: 10px;
+    font-size: 19px;
+ 
+  }
+
+  .container {
+    /* border: 1px solid black; */
+    width: 80%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  span{
+    color: gray;
+  }
