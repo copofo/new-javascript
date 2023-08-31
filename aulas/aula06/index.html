@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aula 01</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <h1>Aula 06</h1>
+
+
+    <h2>Respondendo perguntas das aulas de 1 a 5</h2>
+
+    <p>
+      Nesta vídeo aula, o instrutor aborda uma sessão de perguntas e respostas relacionadas ao conteúdo anterior do curso. As perguntas foram coletadas de aulas anteriores e são respondidas de maneira prática e esclarecedora. Aqui estão algumas das perguntas discutidas, juntamente com exemplos de código quando aplicável:
+    </p>
+
+    
+    <ol>
+      <li>
+        <strong>Diferença entre == e ===:  </strong> O instrutor explica a diferença entre os operadores de igualdade == e === em JavaScript. O == verifica a igualdade de valores, enquanto o === verifica a igualdade de valores e tipos.
+
+  
+      </li>
+
+      <li>
+        <strong>Uso do Node.js para execução: </strong> É mencionado que o Node.js é uma ferramenta útil para executar código JavaScript fora do navegador, permitindo que você execute scripts no servidor.
+      </li>
+
+      <li>
+        <strong>Utilização do prompt no navegador:  </strong>  O instrutor demonstra como usar o prompt para interagir com o usuário e obter entrada de dados pelo navegador.
+      </li>
+
+      <li>
+        <strong>Diferença entre != e !==:   </strong>  A diferença entre os operadores de desigualdade != e !== também é explicada. O != verifica desigualdade de valores, enquanto o !== verifica desigualdade de valores e tipos.
+      </li>
+
+      <li>
+        <strong>Identificação de dispositivos:   </strong> Um exemplo de código é fornecido para mostrar como usar a propriedade navigator.userAgent para identificar se o acesso está sendo feito a partir de um dispositivo móvel ou um PC.
+      </li>
+
+      <li>
+        <strong>Manipulação do DOM (Modelo de Objeto de Documento):  </strong> O instrutor discute a estrutura de árvore do DOM, que representa a estrutura de elementos HTML em uma página. Ele menciona que o JavaScript é usado para manipular e interagir com elementos no DOM.
+      </li>
+
+      <li>
+        <strong>Nomenclatura de variáveis:  </strong>  O instrutor aborda a nomenclatura de variáveis, incluindo o uso de prefixos como GE (global), L (local) e C (constante). Ele ressalta que isso é uma questão de organização pessoal e não tem impacto significativo no desempenho ou funcionalidade.
+      </li>
+
+      <li>
+        <strong>Carregamento de scripts assíncronos:  </strong> O instrutor explora o uso do atributo defer ao carregar scripts no HTML. Ele explica que isso permite que o JavaScript seja carregado em paralelo com o HTML, mas enfatiza que colocar scripts no final da página é uma prática recomendada.
+      </li>
+
+      <li>
+        <strong>Importância de HTML e CSS: </strong> É enfatizado que ter conhecimento prévio de HTML e CSS é importante ao trabalhar com JavaScript para a web, especialmente ao manipular atributos, propriedades e estilos dos elementos no DOM.
+      </li>
+
+    </ol>
+
+    <p>A aula conclui com o instrutor incentivando os alunos a continuar se aprofundando nos conteúdos relacionados e assistindo a playlists de HTML e CSS para fortalecer suas habilidades antes de prosseguir com JavaScript.</p>
+
+    <p class="ex">
+      Exemplos de Uso:
+    </p>
+  <pre>
+
+  <code>
+
+  let num1 = 5;
+  let num2 = "5";
+
+  console.log(num1 == num2);  <span>// true (verifica igualdade de valores)</span>
+  console.log(num1 === num2); <span>// false (verifica igualdade de valores e tipos)</span>
+
+  </code>
+
+  </pre>
+
+  
+
+    <pre>
+  
+      <code>
+          <span>// Sem o Modo Estrito (sem erro)</span>
+          function calcular(idade) {
+              idade = idade + 10;
+              return idade;
+          }
+
+          <span>// Com o Modo Estrito (erro: argumento somente leitura)</span>
+          "use strict";
+          function calcular(idade) {
+              idade = idade + 10;  <sapn>// Erro: "idade" é somente leitura</sapn>
+              return idade;
+          }
+      </code>
+      
+    </pre>
+
+
+  
+      <h3>Ativando o Modo Estrito:</h3>
+    
+
+    <p>
+      Para ativar o modo estrito em seu código JavaScript, basta adicionar a linha "use strict"; no topo do seu arquivo ou função. Veja como fica:
+    </p>
+
+    <pre>
+      <code>
+
+        "use strict";
+
+      </code>
+    </pre>
+
+    <h3>Conclusão:</h3>
+
+    <p>O modo estrito no JavaScript é uma ferramenta valiosa para desenvolvedores que desejam escrever código mais limpo, seguro e robusto. Ao adotar o modo estrito, você estará evitando erros comuns e seguindo práticas recomendadas de programação. Lembre-se de ativá-lo sempre que estiver desenvolvendo para garantir que o seu código seja da mais alta qualidade possível.</p>
+
+    <p>Esperamos que este post tenha ajudado a esclarecer o conceito do modo estrito no JavaScript. Se tiver alguma dúvida ou quiser explorar mais sobre esse tópico, sinta-se à vontade para deixar um comentário. Até a próxima aula!</p>
+
+    <p><strong>Nota:</strong> Este exemplo de código e explicação foi baseado no conteúdo fornecido no curso <a href="https://youtu.be/E4DBTqgxHGM">Javascript Completo e Profissional</a>, com Prof. Bruno, do canal <a href="https://www.youtube.com/@cfbcursos">CFBCursos</a>.</p>
+
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
