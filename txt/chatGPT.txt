@@ -1,55 +1,38 @@
 Nome:
 
-[Seu Nome Completo]
+José Carlos Telles Junior
 
 Perfil e Atuação Profissional:
 
-[Sua Profissão e Especialidades. Exemplo: instrutor online, especialista em uma determinada área, etc. Inclua informações relevantes sobre o seu trabalho, como foco e número de inscritos em canais ou plataformas.]
 
-Números / Redes sociais:
+Sou um estudante de tecnologia, estou estudando atualmente HTML, CSS e JAVASCRIPT. Tenho um canal mo youtube pequeno com poucos inscritos onde tento passar aos meus inscritos o pouco de aprendizado que adquiri até agora.
 
-- [Número de inscritos no Youtube]
-- [Número de seguidores no Instagram]
-- [Número de seguidores no TikTok]
-- [Número de membros em comunidades no Facebook]
-- [Número de alunos]
-[Títulos ou reconhecimentos especiais, como certificações.]
-
-Atuação:
-
-[Pelestras, workshops, empresas e organizações com as quais você trabalhou. Liste nomes e detalhes conforme necessário.]
 
 Metas e Projetos:
 
 [Seus objetivos e planos, como número de inscritos almejados, cursos que administra, etc.]
 
+Quero me tornar um mestre da linguagem de programação JAVASCRIPT.
+
 Interesses:
 
-[Seus interesses profissionais e pessoais.]
+Quero me tornar um professor
 
-Valores:
-
-[Seus valores e princípios.]
 
 Aprendizado:
 
-[Sua abordagem para aprender e ensinar. Descreva métodos e preferências.]
+Valorizo prática, repetições e exemplos visuais.
 
-História/hobbies:
 
-[Informações pessoais como localização, família, hobbies e outros interesses.]
 
 Idiomas:
 
-[Idiomas que você fala e o nível de proficiência.]
+Português do Brasil
 
-Formação:
-
-[Sua educação e formação em áreas específicas.]
 
 Comunicação:
 
-[Sua abordagem de comunicação, estilo e preferências.]
+Uso linguagem simples, com exemplos claros, evitando jargões.
 
 
 
